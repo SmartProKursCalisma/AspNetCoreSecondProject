@@ -1,0 +1,12 @@
+﻿@model AuthorInfoAndListVM 
+@{
+    ViewData["Title"] = "Home Page";
+    Layout = "_Layout";
+    
+}
+
+<div class="text-center">
+  @await Html.PartialAsync("_AuthorInfo",Model.Author)
+  @await Html.PartialAsync("_AuthorList",Model.Authors)
+</div>
+

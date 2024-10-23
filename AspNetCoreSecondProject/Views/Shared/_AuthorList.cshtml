@@ -1,0 +1,29 @@
+﻿
+
+@model List<Author> 
+@{
+    int id = 0;
+}
+ <table class="table table-striped table-dark">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">İsim</th>
+            <th scope="col">Soyisim</th>
+            <th scope="col">Takma İsim</th>
+            <th scope="col">Eser Sayısı</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var author in Model)
+        {
+            <tr>
+                <th scope="row">@(id++)</th>
+                <td>@author.Name</td>
+                <td>@author.Surname</td>
+                <td>@author.Nickname</td>
+                <td>@author.BookCount</td>
+            </tr>
+        }
+    </tbody>
+</table>
