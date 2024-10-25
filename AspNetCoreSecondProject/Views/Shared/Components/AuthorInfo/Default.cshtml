@@ -1,0 +1,19 @@
+﻿@model Author
+
+<p>
+    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+        Yazar Bilgisini Göster
+    </a>
+
+</p>
+<div class="collapse" id="collapseExample">
+    <div class="card card-body">
+        <img src="https://placedog.net/640/480?id=3" width="100" height="100" style="border-radius:80px" />
+        <p style="color:lightgray">@Model.Nickname</p>
+        <ul>
+            <li>Ad : @Model.Name</li>
+            <li>Soyad : @Model.Surname</li>
+            <li>Yazar Eser Sayısı : @Model.BookCount</li>
+        </ul>
+    </div>
+</div>
