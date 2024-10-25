@@ -15,28 +15,23 @@ namespace AspNetCoreSecondProject.Controllers
 
         public IActionResult Index()
         {
-            Author author = new Author
-            {
-                Name = "Eylem",
-                BookCount = 50,
-                Nickname = "Ariel Prenses",
-                Surname = "BAKCA"
-            };
-            List<Author> authors = new List<Author>
-            {
-                new(){Name = "Melih Ömer",Surname = "KAMAR",Nickname="kamar",BookCount=123},
-                new(){Name = "Mustafa",Surname = "BAYÇÖL",Nickname="baycol",BookCount=12},
-                new(){Name = "EfeCan",Surname = "CÖRÜT",Nickname="corut",BookCount=125},
-                new(){Name = "Berkant",Surname = "YILMAZ",Nickname="yilmaz",BookCount=1234},
-                new(){Name = "Eylem",Surname = "BAKCA",Nickname="Ariel Prenses",BookCount=55},
-            };
+            //Author author = new Author
+            //{
+            //    Name = "Eylem",
+            //    BookCount = 50,
+            //    Nickname = "Ariel Prenses",
+            //    Surname = "BAKCA"
+            //};
+            //List<Author> authors = new List<Author>
+            //{
+            //    new(){Name = "Melih Ömer",Surname = "KAMAR",Nickname="kamar",BookCount=123},
+            //    new(){Name = "Mustafa",Surname = "BAYÇÖL",Nickname="baycol",BookCount=12},
+            //    new(){Name = "EfeCan",Surname = "CÖRÜT",Nickname="corut",BookCount=125},
+            //    new(){Name = "Berkant",Surname = "YILMAZ",Nickname="yilmaz",BookCount=1234},
+            //    new(){Name = "Eylem",Surname = "BAKCA",Nickname="Ariel Prenses",BookCount=55},
+            //};
             
-            AuthorInfoAndListVM model = new()
-            {
-                 Author = author,
-                 Authors = authors
-            };
-            return View(model);
+            return View();
         }
 
         public IActionResult Privacy()
